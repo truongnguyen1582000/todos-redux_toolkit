@@ -1,0 +1,26 @@
+input {
+  height: 50px;
+  padding-left: 15px;
+  outline: none;
+  border: none;
+  user-select: none;
+  width: 90%;
+  font-size: 25px;
+}
+
+input::placeholder {
+  color: chocolate;
+  font-size: 25px;
+}
+
+form {
+  box-shadow: 0 0 10px #ccc;
+  width: 500px;
+  margin-bottom: 2px;
+}
+
+.complete-all {
+  margin-left: 10px;
+  font-size: 20px;
+  user-select: none;
+}

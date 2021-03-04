@@ -1,0 +1,8 @@
+.clear-completed {
+}
+
+.clear-completed .btn {
+  outline: none;
+  padding: 4px 6px;
+  margin: 0 4px;
+}
