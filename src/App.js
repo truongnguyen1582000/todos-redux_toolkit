@@ -42,10 +42,10 @@ function App() {
           selectActive={() => setStatus("active")}
           selectComplete={() => setStatus("completed")}
         />
-        {todos.filter((item) => item.isComplete).length !== 0 && (
-          <ClearCompleted />
-        )}
       </div>
+      {todos.filter((item) => item.isComplete).length !== 0 && (
+        <ClearCompleted />
+      )}
     </div>
   );
 }

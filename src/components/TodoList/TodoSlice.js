@@ -15,8 +15,9 @@ export const TodoSLice = createSlice({
     },
     deleteTodo: (state, action) => {
       const itemIndex = state.findIndex((item) => item.id === action.payload);
-
       state.splice(itemIndex, 1);
+
+      // state.filter((item) => item.id === action.payload);
       localStorage.setItem("data", JSON.stringify(state));
     },
     setComplete: (state, action) => {
