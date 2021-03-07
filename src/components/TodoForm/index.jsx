@@ -23,7 +23,7 @@ function TodoForm(props) {
     setValue(e.target.value);
   };
 
-  const allIsComplete =
+  const isAllComplete =
     todos.filter((item) => item.isComplete === true).length === todos.length;
 
   return (
@@ -32,7 +32,7 @@ function TodoForm(props) {
         className="fas fa-check-double complete-all"
         onClick={() => dispatch(completeAll())}
         style={{
-          opacity: allIsComplete ? "1" : "0.4",
+          opacity: isAllComplete ? "1" : "0.4",
         }}
       ></i>
       <input
