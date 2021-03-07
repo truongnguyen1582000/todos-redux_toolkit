@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/todos-redux_toolkit/static/css/main.a07ade36.chunk.css",
-    "main.js": "/todos-redux_toolkit/static/js/main.9d391924.chunk.js",
-    "main.js.map": "/todos-redux_toolkit/static/js/main.9d391924.chunk.js.map",
+    "main.css": "/todos-redux_toolkit/static/css/main.7c3a8e4a.chunk.css",
+    "main.js": "/todos-redux_toolkit/static/js/main.389e7fc4.chunk.js",
+    "main.js.map": "/todos-redux_toolkit/static/js/main.389e7fc4.chunk.js.map",
     "runtime-main.js": "/todos-redux_toolkit/static/js/runtime-main.31ef937e.js",
     "runtime-main.js.map": "/todos-redux_toolkit/static/js/runtime-main.31ef937e.js.map",
     "static/css/2.3c328e4c.chunk.css": "/todos-redux_toolkit/static/css/2.3c328e4c.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.0005491d.chunk.js.map": "/todos-redux_toolkit/static/js/3.0005491d.chunk.js.map",
     "index.html": "/todos-redux_toolkit/index.html",
     "static/css/2.3c328e4c.chunk.css.map": "/todos-redux_toolkit/static/css/2.3c328e4c.chunk.css.map",
-    "static/css/main.a07ade36.chunk.css.map": "/todos-redux_toolkit/static/css/main.a07ade36.chunk.css.map",
+    "static/css/main.7c3a8e4a.chunk.css.map": "/todos-redux_toolkit/static/css/main.7c3a8e4a.chunk.css.map",
     "static/js/2.e721b69d.chunk.js.LICENSE.txt": "/todos-redux_toolkit/static/js/2.e721b69d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.31ef937e.js",
     "static/css/2.3c328e4c.chunk.css",
     "static/js/2.e721b69d.chunk.js",
-    "static/css/main.a07ade36.chunk.css",
-    "static/js/main.9d391924.chunk.js"
+    "static/css/main.7c3a8e4a.chunk.css",
+    "static/js/main.389e7fc4.chunk.js"
   ]
 }
