@@ -6,9 +6,9 @@ function ClearCompleted(props) {
   const dispatch = useDispatch();
   return (
     <div className="clear-completed">
-      <button className="btn" onClick={() => dispatch(deleteAllCompleteTodo())}>
+      <p className="btn" onClick={() => dispatch(deleteAllCompleteTodo())}>
         Clear completed
-      </button>
+      </p>
     </div>
   );
 }

@@ -1,19 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 function Selector(props) {
-  const { selectAll, selectActive, selectComplete } = props;
+  const { selectAll, selectActive, selectComplete, status } = props;
   return (
     <div className="selector">
-      <button className="btn" onClick={() => selectAll()}>
+      <h2
+        className={status === "all" ? "btn btn-active" : "btn"}
+        onClick={() => {
+          selectAll();
+          localStorage.setItem("status", "all");
+        }}
+      >
         All
-      </button>
-      <button className="btn" onClick={() => selectActive()}>
+      </h2>
+      <h2
+        className={status === "active" ? "btn btn-active" : "btn"}
+        onClick={() => {
+          selectActive();
+          localStorage.setItem("status", "active");
+        }}
+      >
         Active
-      </button>
-      <button className="btn" onClick={() => selectComplete()}>
+      </h2>
+      <h2
+        className={status === "completed" ? "btn btn-active" : "btn"}
+        onClick={() => {
+          selectComplete();
+          localStorage.setItem("status", "completed");
+        }}
+      >
         Completed
-      </button>
+      </h2>
     </div>
   );
 }

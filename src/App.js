@@ -10,7 +10,7 @@ import ClearCompleted from "./components/ClearCompleted";
 function App() {
   const todos = useSelector((state) => state.todos);
   const [filteredTodos, setfilteredTodos] = useState([]);
-  const [status, setStatus] = useState("all");
+  const [status, setStatus] = useState(localStorage.getItem("status") || "all");
 
   useEffect(() => {
     filterHandler();
@@ -41,6 +41,7 @@ function App() {
           selectAll={() => setStatus("all")}
           selectActive={() => setStatus("active")}
           selectComplete={() => setStatus("completed")}
+          status={status}
         />
       </div>
       {todos.filter((item) => item.isComplete).length !== 0 && (
