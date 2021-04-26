@@ -34,8 +34,9 @@ export const TodoSLice = createSlice({
       localStorage.setItem("data", JSON.stringify(state));
     },
     deleteAllCompleteTodo: (state, action) => {
-      localStorage.setItem("data", JSON.stringify(state));
-      return state.filter((item) => item.isComplete === false);
+      const stateClone = state.filter((item) => item.isComplete === false);
+      localStorage.setItem("data", JSON.stringify(stateClone));
+      return stateClone;
     },
   },
 });
